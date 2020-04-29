@@ -1,0 +1,10 @@
+<p class="title">{{title}}</p>
+<div class="mt10 bonesContainer" bones (onBoneAdded)="onBoneAdded()" (onTerminate)="onBoneTerminated()"></div>
+
+<div class="mt20 vcenter">
+  <span class="instruction">Rotate</span>
+  <span class="slidercontainer">
+    <input [disabled]="boneCount < 2 || !chainTerminated" type="range" min="1" max="100" value="50" class="slider" id="myRange" (input)="onSliderChange($event)">
+  </span>
+</div>
+<p class="instruction">{{instructions}}</p>

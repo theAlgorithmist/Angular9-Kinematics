@@ -1,0 +1,4 @@
+<p class="title">{{title}}</p>
+<div class="mt10 bonesContainer" ccd-steps (onBoneAdded)="onBoneAdded()" (onTerminate)="onBoneTerminated($event)"></div>
+<p class="instruction">{{instructions}}</p>
+<button *ngIf="showNext" class="mt10 blue-button" (click)="onNext()">Next</button>

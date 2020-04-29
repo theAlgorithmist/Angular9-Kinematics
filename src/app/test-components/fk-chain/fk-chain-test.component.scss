@@ -1,0 +1,32 @@
+.slidercontainer
+{
+  margin-left: 6px;
+}
+
+.slider
+{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 15px;
+  background: #ebebeb;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #8A2BE2;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb
+{
+  width: 15px;
+  height: 15px;
+  background: #8A2BE2;
+  cursor: pointer;
+}
